@@ -98,6 +98,26 @@ npx -y @smithery/cli install mcp_snowflake_server --client claude
 }
 ```
 
+### Using Docker
+
+```
+{
+  "mcpServers": {
+    "snowflake": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "ajeetraina777/snowflake-mcp-server",
+        "snowflake://user:password#@UGB57389/TASTY_BYTES_SAMPLE_DATA/<SCHEMA>?warehouse=<WAREHOUSE>&role=ACCOUNTADMIN"
+      ]
+    }
+  }
+}
+
+```
+
 ### Installing locally
 ```python
 # Add the server to your claude_desktop_config.json
